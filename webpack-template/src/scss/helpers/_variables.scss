@@ -1,0 +1,4 @@
+$full-screen-height: 100vh;
+$navbar-height: 60px;
+$footer-height: 259px;
+$min-screen-height: calc(#{$full-screen-height} - #{$footer-height});

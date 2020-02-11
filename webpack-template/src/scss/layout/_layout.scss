@@ -1,0 +1,47 @@
+@import 'grid';
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.force-center {
+  // needs a parent with relative position
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.force-vertical-center {
+  // needs a parent with relative position
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center {
+  text-align: center !important;
+}
+
+.left {
+  text-align: left !important;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.w-25 {
+  width: 25% !important;
+}
+.w-50 {
+  width: 50% !important;
+}
+.w-75 {
+  width: 75% !important;
+}
+.w-100 {
+  width: 100% !important;
+}

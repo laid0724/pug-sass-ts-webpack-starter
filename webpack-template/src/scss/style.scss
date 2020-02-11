@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import './layout/layout';
+@import './helpers/helpers';
+@import './components/components';
+
+body {
+  background-color: $white;
+}
+
+// ::-webkit-scrollbar {
+//   width: 5px;
+//   height: 5px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: $greyish;
+//   border-radius: 15px;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   opacity: 0.8;
+//   background: $purple;
+// }

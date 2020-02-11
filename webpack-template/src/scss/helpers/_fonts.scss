@@ -1,0 +1,45 @@
+@import 'colors';
+@import '../layout/layout';
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+p {}
+a {}
+
+.nowrap {
+  white-space: nowrap !important;
+}
+
+.wrap {
+  white-space: wrap !important;
+}
+
+.break-word {
+  word-break: break-all !important;
+}
+
+.truncate-ellipses {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thin {
+  font-weight: unset !important;
+}
+
+.bold {
+  font-weight: 500 !important;
+}
+
+.bolder {
+  font-weight: 700 !important;
+}
+
+.text-transform-none {
+  text-transform: none !important;
+}
