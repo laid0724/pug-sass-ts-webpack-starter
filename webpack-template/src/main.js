@@ -1,1 +1,1 @@
-import "./scss/style.scss";
+import "./scss/style.scss"; // your stylesheet, webpack will transpile this to js

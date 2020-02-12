@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: './src/main.js',
@@ -12,6 +13,9 @@ const config = {
     open: true
   },
   plugins: [
+    new CopyPlugin([
+      { from: './src/assets', to: 'assets' }
+    ]),
     // This handles routing, for each page, instantiate another HtmlWebpackPlugin object
     new HtmlWebpackPlugin({
       template: './src/views/index.pug',
