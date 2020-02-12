@@ -1,6 +1,6 @@
 ## Description
 
-This is a default webpack project with sass/pug transpilers setup for you.
+This is a default webpack project with sass/pug/typescript transpilers setup for you.
 
 ## Run project:
 
@@ -10,4 +10,4 @@ This is a default webpack project with sass/pug transpilers setup for you.
 
 ## Routing
 
-To add pages/new routes, go to `webpack.config.js` and add a new `HtmlWebpackPlugin` object.
+To add pages/new routes, go to `webpack.config.js` and add a new `HtmlWebpackPlugin` object under the `plugins` array.
