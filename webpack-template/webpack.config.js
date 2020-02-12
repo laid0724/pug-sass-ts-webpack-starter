@@ -60,8 +60,8 @@ const config = {
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       { 
-        // allows you to use svg inside your scss sheets
-        test: /\.svg/, 
+        // allows you to use images inside your scss sheets
+        test: /\.(jpe?g|png|gif|svg)$/i,
         use: ['file-loader']
       }
     ]
