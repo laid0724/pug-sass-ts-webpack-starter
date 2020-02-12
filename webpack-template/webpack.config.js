@@ -58,12 +58,17 @@ const config = {
         // transpiles scss to css then js
         test: /\.scss/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      { 
+        // allows you to use svg inside your scss sheets
+        test: /\.svg/, 
+        use: ['file-loader']
       }
     ]
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js']
-  },
+  }
 };
 
 module.exports = (env, argv) => {
