@@ -19,7 +19,7 @@ const config = {
       template: './src/views/index.pug',
       filename: 'index.html', // the file to write the html to
       title: 'PROJECT NAME - HOME',
-      inject: 'head', // where to inject the js, head or body
+      inject: 'body', // where to inject the js, head or body (inject to body if you need to access the DOM, e.g., use querySelector)
       minify: {
         collapseWhitespace: true,
         removeComments: true
@@ -27,9 +27,9 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: './src/views/another-page-template.pug',
-      filename: 'another-page-template.html', // the file to write the html to
+      filename: 'another-page-template.html',
       title: 'PROJECT NAME - PAGE',
-      inject: 'head', // where to inject the js, head or body
+      inject: 'body',
       minify: {
         collapseWhitespace: true,
         removeComments: true
