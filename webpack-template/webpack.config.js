@@ -63,6 +63,11 @@ const config = {
         // allows you to use images inside your scss sheets
         test: /\.(jpe?g|png|gif|svg)$/i,
         use: ['file-loader']
+      },
+      { 
+        // allows you to use font files
+        test: /\.(ttf|woff|eot)$/i,
+        use: ['file-loader']
       }
     ]
   },
@@ -73,10 +78,10 @@ const config = {
 
 module.exports = (env, argv) => {
   if (argv.mode === 'development') {
-    // twerk config for dev here
+    // tweak config for dev here
   }
   if (argv.mode === 'production') {
-    // twerk config for prod here
+    // tweak config for prod here
   }
   return config;
 };
